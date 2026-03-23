@@ -1,0 +1,333 @@
+
+body{
+     background-color: #303030;
+}
+#header{
+    grid-area:head;
+    background-color: #D0D0D0;
+   
+    
+}
+#icon{
+    grid-area:icn;
+    max-width: 50%;
+    max-height: 50%;
+    background-color: #ff9035;
+    
+}
+#main-text{
+    grid-area:txt;
+    background-color: #303030;
+    border-style: solid;
+    border-color: #FFFFFF;
+    
+}
+#main-text p{
+    color: #dadada;
+}
+#main-grid nav{
+    grid-area:nav;
+    background-color: #ff7300;
+    
+}
+
+footer{
+    grid-area:foot;
+    background-color: #4e3d2f;
+    position:relative;
+    top: 10px;
+}
+
+#main-grid{
+    background-color: #ff9035;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.2fr 2fr 0.6fr 0.2fr;
+
+    grid-template-areas:
+    "head head"
+    "icn txt"
+    "nav txt"
+    "foot foot";
+    width: 98vw;
+    height: 120vh;
+
+}
+@media screen and (width< 900px)
+{
+    #main-grid
+    {
+        background-color: #ff9035;
+    
+        display: grid;
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 2fr 0.6fr 0.2fr;
+
+        grid-template-areas:
+        "head"
+        "txt"
+        "nav"
+        "foot";
+        width: 100vw;
+        height: 100vh;
+    }
+    #icon
+    {
+        display: none;
+    }
+}
+
+
+#blend{
+    grid-area:blend;
+}
+#unity{
+    grid-area:unity;
+}
+#godot
+{
+    grid-area:godot;
+}
+#about1{
+    grid-area:a1;
+}
+#about2{
+    grid-area:a2;
+}
+#about3{
+    grid-area:a3;
+}
+
+#about-nav{
+    /* grid-area:nav; */
+    position: fixed;
+    bottom:10px;
+    background-color: #90AA90;
+    color:#DEDEDE;
+    /* height: 100%; */
+    width: 100%;
+    /* left:50%; */
+}
+
+#about-grid{
+    background-color: #7a7a7a;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "head head head "
+    "blend a1 a1 "
+    "a2 a2 unity "
+    "godot a3 a3 ";
+    gap: 80px;
+}
+
+@media screen and (width < 900px)
+{
+
+    
+
+    #about-grid{
+        background-color: #7a7a7a;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "head"
+        "a1"
+        "blend"
+        "a2"
+        "unity"
+        "a3"
+        "godot";
+        gap: 80px;
+    }
+
+}
+
+
+
+
+.hideA
+{
+    display: none
+}
+.hideB
+{
+    display: none
+}
+.hideC
+{
+    display: none
+}
+.hideD
+{
+    display: none
+}
+.hideE
+{
+    display: none
+}
+.hideF
+{
+    display: none
+}
+
+#pan img{
+    max-width: 400px;
+}
+
+
+img
+{
+    max-height: 300px;
+}
+#pan{
+    grid-area:pan;
+}
+#pan-text
+{
+    grid-area:pantext;
+}
+#vidA
+{
+    grid-area:vidA;
+}
+#bot-text
+{
+    grid-area:bottext;
+}
+#vidB
+{
+    grid-area:vidB;
+}
+#dragon-text{
+    grid-area:dragontext;
+}
+
+#sticky-nav{
+    position: sticky;
+    bottom: 50px;
+    background-color: #dadada;
+}
+#emptyspace
+{
+    grid-area:empty;
+}
+
+
+#grid-short
+{
+    background-color: #383838;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:0.3fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+    "head head head head"
+    "pan pantext empty empty"
+    "vidA dragontext vidB bottext"
+    "foot foot foot foot";
+
+}
+@media screen and (width < 900px)
+{
+    #grid-short
+    {
+        background-color: #383838;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:0.3fr 1fr 1fr 1fr 0.5fr 0.3fr;
+        grid-template-areas:
+        "head head"
+        "pan pantext"
+        "vidA dragontext"
+        "vidB bottext"
+        "foot foot";
+
+    }
+    #sticky-nav
+    {
+    position: fixed;
+    bottom: 50px;
+    background-color: #dadada;
+    z-index: 23;
+    }
+}
+
+#long1{ grid-area:lA; }
+#long2{ grid-area:lB; }
+#long3{ grid-area:lC; }
+#long4{ grid-area:lD; }
+#long5{ grid-area:lE; }
+#long6{ grid-area:lF; }
+#long7{ grid-area:lG; }
+#long8{ grid-area:lH; }
+#long9{ grid-area:lI; }
+#long10{ grid-area:lJ; }
+#long11{ grid-area:lK; }
+#long12{ grid-area:lL; }
+#long13{ grid-area:lM; }
+#long14{ grid-area:lN; }
+#long15{ grid-area:lO; }
+#long16{ grid-area:lP; }
+#long17{ grid-area:lQ; }
+#long18{ grid-area:lS; }
+/* long*/
+
+#long1, #long4, #long7, #long10, #long13, #long16 
+{
+    background-color: #303030;
+    color: #ffe6b3;
+}
+#long2, #long5, #long8, #long11, #long14, #long17 
+{
+    background-color: #333333;
+    color: #ffe6b3;
+}
+
+#grid-long
+{
+    display: grid;
+    background-color: #202020;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "lA lB lC"
+    "lD lE lF"
+    "lG lH lI"
+    "lJ lK lL"
+    "lM lN lO"
+    "lP lQ lS";
+}
+
+@media screen and (width < 900px)
+{
+    #grid-long
+    {
+        display: grid;
+        background-color: #202020;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "lA lB"
+        "lC lC"
+        "lD lE"
+        "lF lF"
+        "lG lH"
+        "lI lI"
+        "lJ lK"
+        "lL lL"
+        "lM lN"
+        "lO lO"
+        "lP lQ"
+        "lS lS";
+    }
+}
+
+.hide
+{
+    display:none;
+}

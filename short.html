@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blender art gallery</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="./main.js" defer></script>
+    </head>
+    <body id="grid-short">
+        <div id="header">
+            <h1>Videos and slides!:</h1>
+        </div>
+        <div id="pan">
+            <button onclick="last()">last</button>
+            <img id="imgA" class="hideA" src="./labA.png" alt="weird lab slides">
+            <img id="imgB" class="hideB" src="./labB.png" alt="weird lab slides">
+            <img id="imgC" class="hideC" src="./labC.png" alt="weird lab slides">
+            <img id="imgD" class="hideD" src="./labD.png" alt="weird lab slides">
+            <img id="imgE" class="hideE" src="./labE.png" alt="weird lab slides">
+            <img id="imgF" class="hideF" src="./labF.png" alt="weird lab slides">
+            <button onclick="next()">next</button>
+            
+        </div>
+        <p id="pan-text">This is a collection of screenshots from a game I made awhile ago. Putting them in a group of sldies you can click through helps show off how their all part of the same collection.</p>
+        <p id="emptyspace"></p>
+        <div id="vidA">
+            <video width="320" height="240" controls>
+                <source src="https://github.com/23elemental23/vids-for-final/raw/refs/heads/main/dragonstatue.webm" type="video/webm">
+                <source src="./0001-0060.mkv" type="video/mkv">
+            </video>
+        </div>
+        <p id="dragon-text">This was an old one. This was one of the first (and last) times I have attempted sculpting semi-successfully. Sculpting is a different way of making 3d moddels that has more to do with stretching and pulling many small coordinates at a time relative to the camera and mouse. It's not a process that I'm a fan of, so I always worked with my meshes using a different overall aproache thats more geometry and cooriate based. Still I think this one turned out ok.</p>
+        <div id="vidB">
+            <video width="320" height="240" controls>
+                <source src="https://github.com/23elemental23/vids-for-final/raw/refs/heads/main/botthing.webm" type="video/webm">
+                <source src="./botthing.mkv" type="video/mkv">
+            </video>
+        </div>
+        <p id="bot-text">Often when working with animations where characters move around and do stuff, animators will ussaly go around moveing the WHOLE character in t-pose to where they need to be for each keyframe before they start to make the arms, legs, and other joints bend around in a belivable way. Sadly this one never got past that point.</p>
+        <nav id="sticky-nav">
+            <h2>Links to other pages:</h2>
+            <ul>
+                <li><a href = "index.html">Back to main page</a></li>
+                <li><a href = "long.html"> large image gallery</a></li>
+                <li><a href = "about.html">about me</a></li>
+            </ul>
+        </nav>
+        <footer>page by Alain Riendeau.</footer>
+    </body>
+</html>
